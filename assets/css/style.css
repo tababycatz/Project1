@@ -1,8 +1,14 @@
-#projectName {
+head, body {
     font-family: 'Cinzel', serif;
-    font-size: 200px;
-    color: purple;
     font-weight: bold;
-    background-color: black;
     text-align: center;
+
 }
+    
+#projectName {
+    font-size: 150px;
+    color: purple;
+    background-color: black;
+
+}
+
