@@ -1,0 +1,43 @@
+head, body{
+<<<<<<< HEAD
+    font-family: 'Cinzel', serif; color: #fff;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("https://www.freevector.com/uploads/vector/preview/2125/FreeVector-Rolls-Of-Film.jpg");
+    
+=======
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    text-align: center;
+>>>>>>> 93875231926d0cfbfe342f17bf44a7beedfea2ef
+
+}
+
+#projectName {
+    font-size: 150px;
+    color: darkgoldenrod;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+#movieGif, #movieInfo, #drinkGif, #drinkInfo{
+    border:solid;
+    border-color:gray;
+    width:350px;
+    height:350px;
+    float: left;
+}
+.parallax{
+    background-position: fixed;
+    background-size:cover;
+    min-height: 200px;
+    text-align: center;
+    
+}
+
+<<<<<<< HEAD
+#drinkGif {
+    align-self: center;
+}
+
+=======
+>>>>>>> 93875231926d0cfbfe342f17bf44a7beedfea2ef
