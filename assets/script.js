@@ -3,9 +3,13 @@ $(document).ready(function(){
     $('.parallax').parallax();
     
     // Movie API
-   function displayMovie() {
+    $('#textarea1').val('');
+    M.textareaAutoResize($('#textarea1'));
 
-       
+    
+    function displayMovie() {
+        
+        
        var movie = $(this).attr("data-name");
     var queryURL = "https://www.omdbapi.com/?t=" + movie + "&1c5dcd2a";
     
@@ -14,16 +18,16 @@ $(document).ready(function(){
         url: queryURL,
         method: "GET"
     }).then(function(response) {
-    
+        
         // Creating a div to hold the movie
      var movieDiv = $("<div class='movie'>");
      
      // Storing the rating data
      var rating = response.Rated;
-
+     
      // Creating an element to have the rating displayed
      var pOne = $("<p>").text("Rating: " + rating);
-
+     
      // Displaying the rating
      movieInfo.append(pOne);
      
@@ -32,7 +36,7 @@ $(document).ready(function(){
      
      // Creating an element to hold the release year
      var pTwo = $("<p>").text("Released: " + released);
-
+     
      // Retrieving the URL for the image
      var imgURL = response.Poster;
      
@@ -42,13 +46,18 @@ $(document).ready(function(){
      // Appending the image
      movieGif.append(image);
      
+     
      // Putting the entire movie above the previous movies
-    //  $("#movies-view").prepend(movieDiv);
+     //  $("#movies-view").prepend(movieDiv);
 });
 
 }
+
+// Adding a click event listener to all elements with a class of "movie-btn"
+$(document).on("click", "#movieBtn", displayMovie);
+
 });  
 
 
 
-    
+
