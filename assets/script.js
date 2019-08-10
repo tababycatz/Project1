@@ -48,9 +48,8 @@ $(document).ready(function(){
     //  $("#movies-view").prepend(movieDiv);
    });
 
- }   
-    });
+ });  
+
 
 
     
-});
