@@ -2,11 +2,11 @@ head, body{
     font-family: 'Cinzel', serif;
     font-weight: bold;
     text-align: center;
-
+    background-color: antiquewhite;
 }
 
 #projectName {
-    font-size: 150px;
+    font-size: 130px;
     color: darkgoldenrod;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
@@ -22,7 +22,13 @@ head, body{
     background-position: fixed;
     background-size:cover;
     min-height: 200px;
-    text-align: center;
-    
+    text-align: center;  
+}
+.brand-logo{
+    float:left;
+    margin-left: -100px;
+}
+nav{
+    background-image: linear-gradient(to right,rgb(60, 113, 173),#2ED04E);
 }
 
