@@ -3,8 +3,8 @@ $(document).ready(function(){
     $('.parallax').parallax();
     
     // Movie API
-    $('#textarea1').val('');
-    M.textareaAutoResize($('#textarea1'));
+    $('#searchInput').val('');
+    M.textareaAutoResize($('#searchInput'));
 
     
     function displayMovie() {
@@ -52,10 +52,9 @@ $(document).ready(function(){
      // Appending the image
      movieGif.append(image);
      
-     
-     // Putting the entire movie above the previous movies
-     //  $("#movies-view").prepend(movieDiv);
-});
+    
+    });
+} //displayMovie function curly end//
 
 function newCard() {
 
@@ -78,14 +77,15 @@ function newCard() {
       // Adding the button to the buttons-view div
       $("#movieDump").append(a);
     }
-  }
+  }; //newCard function curly end//
 
-}
 
 // Adding a click event listener to all elements with a class of "movie-btn"
-$(document).on("click", "#movieBtn", displayMovie);
+$("#searchBtn").on("click", function(event){
 
-});  
+});
+
+}); //document.ready curly end// 
 
 
 
