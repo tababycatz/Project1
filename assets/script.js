@@ -36,6 +36,12 @@ $(document).ready(function(){
      
      // Creating an element to hold the release year
      var pTwo = $("<p>").text("Released: " + released);
+
+     // Storing the actors data
+     var actors = response.Actors;
+     
+     // Creating an element to have the rating displayed
+     var pOne = $("<p>").text("Rating: " + rating);
      
      // Retrieving the URL for the image
      var imgURL = response.Poster;
@@ -50,6 +56,29 @@ $(document).ready(function(){
      // Putting the entire movie above the previous movies
      //  $("#movies-view").prepend(movieDiv);
 });
+
+function newCard() {
+
+    // Deleting the movies prior to adding new movies
+    // (this is necessary otherwise you will have repeat buttons)
+    $("#movieDump").empty();
+
+    // Looping through the array of movies
+    for (var i = 0; i < movies.length; i++) {
+
+      // Then dynamicaly generating buttons for each movie in the array
+      // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
+      var a = $("<div>");
+      // Adding a class of movie-btn to our button
+      a.addClass("movieInfo");
+      // Adding a data-attribute
+      a.attr("data-name", movies[i]);
+      // Providing the initial button text
+      a.text(movies[i]);
+      // Adding the button to the buttons-view div
+      $("#movieDump").append(a);
+    }
+  }
 
 }
 
