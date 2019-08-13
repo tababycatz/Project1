@@ -37,6 +37,7 @@ head, body{
     float:left;
     margin-left: -100px;
 }
+
 nav{
     background-image: linear-gradient(to right,rgb(198, 147, 156),rgb(1, 34, 72));
    

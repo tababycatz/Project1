@@ -21,6 +21,7 @@ $(document).ready(function(){
         }).then(function(response) {
           
             var movieDiv = $("#movieInfo");
+            var imgDiv = $("#movieGif");
 
             var rating = response.Rated;
             var tOne = $("<p>").text("Rating: " + rating);
@@ -38,12 +39,10 @@ $(document).ready(function(){
             var tFour = $("<p>").text("IMDB Rating: " + imdbrating);
             movieDiv.append(tFour);
 
-            var posterDiv = $("movieGif");
-
-            var posterimg = response.Poster;
-            var imgpos = $("<img>").attr("src", posterimg);
-            posterDiv.append(imgpos);
-
+            var imgURL = response.Poster;
+            var image = $("<img>").attr("src", imgURL);
+            imgDiv.append(image);
+            
 
         });
 
