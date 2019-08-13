@@ -4,11 +4,8 @@ $(document).ready(function(){
     
     // Movie API //
 
-     // This .on("click") function will trigger the AJAX Call
      $("#searchBtn").on("click", function(event) {
 
-        // event.preventDefault() can be used to prevent an event's default behavior.
-        // Here, it prevents the submit button from trying to submit a form when clicked
         event.preventDefault();
 
         var movie = $("#searchInput").val();
@@ -43,51 +40,9 @@ $(document).ready(function(){
             var image = $("<img>").attr("src", imgURL);
             imgDiv.append(image);
             
-
         });
 
-
       });
-
-    
-//     function displayMovie() {
-        
-//         // Creating a div to hold the movie
-//      var movieDiv = $("<div class='movie'>");
-     
-//      // Storing the rating data
-//      var rating = response.Rated;
-     
-//      // Creating an element to have the rating displayed
-//      var pOne = $("<p>").text("Rating: " + rating);
-     
-//      // Displaying the rating
-//      movieInfo.append(pOne);
-     
-//      // Storing the release year
-//      var released = response.Released;
-     
-//      // Creating an element to hold the release year
-//      var pTwo = $("<p>").text("Released: " + released);
-
-//      // Storing the actors data
-//      var actors = response.Actors;
-     
-//      // Creating an element to have the rating displayed
-//      var pOne = $("<p>").text("Rating: " + rating);
-     
-//      // Retrieving the URL for the image
-//      var imgURL = response.Poster;
-     
-//      // Creating an element to hold the image
-//      var image = $("<img>").attr("src", imgURL);
-
-//      // Appending the image
-//      movieGif.append(image);
-//     };
-     
-    
-// //displayMovie function curly end//
 
 // function newCard() {
 
