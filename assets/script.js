@@ -38,13 +38,59 @@ $(document).ready(function(){
             var image = $("<img>").attr("src", imgURL);
             imgDiv.append(image);
 
-            $("#movieInfo").empty();
-            $("#movieGif").empty();
             
-
         });
+        
+        $("#movieInfo").empty();
+        $("#movieGif").empty();
+        
 
+      });
 
+      // Cocktail API //
+      $("#searchBtn1").on("click", function(event){ 
+      
+      var queryURL1 = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
+
+      $.ajax({
+        url: queryURL1,
+        method: "GET"
+      }).then(function(response) {
+
+        var drinkDiv = $("#drinksInfo");
+        var drinkImg = $("#drinksImg");
+        var drink = response;
+        var arrayDrink = 0;
+        var drinkImg = drink.drinks.strDrinkThumb;
+
+        console.log(drinkImg);
+
+        // var drinkName = drink.drinks.strDrink;
+        // console.log(drink.drinks.strDrink);
+
+        
+        
+        //   var rating = response.Rated;
+        //   var tOne = $("<p>").text("Rating: " + rating);
+        //   movieDiv.append(tOne);
+          
+        //   var runtime = response.Runtime;
+        //   var tTwo = $("<p>").text("Runtime: " + runtime);
+        //   movieDiv.append(tTwo);
+
+        //   var actors = response.Actors;
+        //   var tThree = $("<p>").text("Actors: " + actors);
+        //   movieDiv.append(tThree);
+
+        //   var imdbrating = response.imdbRating;
+        //   var tFour = $("<p>").text("IMDB Rating: " + imdbrating);
+        //   movieDiv.append(tFour);
+
+        //   var imgURL = response.Poster;
+        //   var image = $("<img>").attr("src", imgURL);
+        //   imgDiv.append(image);
+
+          
       });
 
     
@@ -52,11 +98,13 @@ $(document).ready(function(){
 
       $("#submitBtn").click(function(){        
         $("#contactForm").submit();
-
+        alert("Thanks for your submission!");
+        
     });
+
 
 
 }); //document.ready curly end// 
 
 
-
+});
