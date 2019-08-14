@@ -77,3 +77,7 @@ height:250%;
     width:75%;
 height:350px;
 }
+
+#cubaLabel, #negroniLabel, #bahamaLabel, #maiLabel, #ginLabel {
+font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
