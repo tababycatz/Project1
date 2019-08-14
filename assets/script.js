@@ -7,9 +7,7 @@ $(document).ready(function(){
      $("#searchBtn").on("click", function(event) {
    
         event.preventDefault();
-
         var movie = $("#searchInput").val();
-
         var queryURL = "https://www.omdbapi.com/?t=" + movie + "&apikey=1c5dcd2a";
 
         $.ajax({
@@ -39,6 +37,9 @@ $(document).ready(function(){
             var imgURL = response.Poster;
             var image = $("<img>").attr("src", imgURL);
             imgDiv.append(image);
+
+            $("#movieInfo").empty();
+            $("#movieGif").empty();
             
 
         });
@@ -46,9 +47,16 @@ $(document).ready(function(){
 
       });
 
+    
+      // Contact Form//
+
+      $("#submitBtn").click(function(){        
+        $("#contactForm").submit();
+
+    });
+
 
 }); //document.ready curly end// 
-
 
 
 
