@@ -37,7 +37,6 @@ head, body{
     float:left;
     margin-left: -100px;
 }
-
 nav{
     background-image: linear-gradient(to right,rgb(198, 147, 156),rgb(1, 34, 72));
    
@@ -58,6 +57,17 @@ nav{
 .container {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     letter-spacing: 2px;
+}
 
-
+#Gin,#Mai,#Bahama{
+width:100%;
+height:250%;
+}
+#cubaLibre{
+    width:75%;
+height:250%;
+}
+#Mojito{
+    width:75%;
+height:350px;
 }
