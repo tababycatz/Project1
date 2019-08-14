@@ -38,12 +38,12 @@ $(document).ready(function(){
             var image = $("<img>").attr("src", imgURL);
             imgDiv.append(image);
 
-            $("#movieInfo").empty();
-            $("#movieGif").empty();
             
-
         });
-
+        
+        $("#movieInfo").empty();
+        $("#movieGif").empty();
+        
 
       });
 
