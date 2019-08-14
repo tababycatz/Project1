@@ -42,6 +42,9 @@ $(document).ready(function(){
             
         });
 
+        $("#movieInfo").empty();
+        $("#movieGif").empty();
+
       });
 
 // function newCard() {
