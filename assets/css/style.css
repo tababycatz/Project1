@@ -1,8 +1,14 @@
-head, body{
+head{
     font-family: 'Dancing Script', cursive; 
     font-weight: bold;
     text-align: center;
-    background-image: url("https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiCxPGx7IDkAhXvguAKHdLWBMkQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.freepik.com%2Ffree-https://img.freepik.com/free-vector/metallic-textured-background_53876-89254.jpg?size=626&ext=jpg-vectors%2Fdark-grey-background&psig=AOvVaw18x9yruQjBP1-Y0iG6knuR&ust=1565820006602746");
+}
+body{
+    font-family: 'Dancing Script', cursive; 
+    font-weight: bold;
+    text-align: center;
+    background: url("../css/Images/BkgImg.jpg");
+   background-size: cover;
     
 }
 
@@ -16,7 +22,7 @@ head, body{
 
 }
 
-#movieGif, #movieInfo, #drinkGif, #drinkInfo{
+#movieGif, #movieInfo, #drinksImg, #drinksInfo{
     border:solid;
     border-color:gray;
     width:350px;
