@@ -52,6 +52,7 @@ $(document).ready(function(){
 
       $("#submitBtn").click(function(){        
         $("#contactForm").submit();
+        alert("Thanks for your submission!");
 
     });
 
