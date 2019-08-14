@@ -47,14 +47,18 @@ $(document).ready(function(){
 
       });
 
+      // Cocktail API //
+      $("#searchBtn1").on("click", function(event){});
+
     
       // Contact Form//
 
       $("#submitBtn").click(function(){        
         $("#contactForm").submit();
         alert("Thanks for your submission!");
-
+        
     });
+
 
 
 }); //document.ready curly end// 
