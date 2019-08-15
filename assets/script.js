@@ -1,9 +1,14 @@
 $(document).ready(function () {
 
-
+$("#searchBtn1").hide();
+$("#movieHeader").hide();
+$("#movieInfoHeader").hide();
   // Movie API //
 
   $("#searchBtn").on("click", function (event) {
+    $("#searchBtn1").show();
+    $("#movieHeader").show();
+$("#movieInfoHeader").show();
 
     event.preventDefault();
     var movie = $("#searchInput").val();
