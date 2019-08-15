@@ -72,6 +72,7 @@ $(document).ready(function () {
       var drinkthumb = response.drinks[0]['strDrinkThumb'];
       var image2 = $("<img>").attr("src", drinkthumb);
       image2.addClass("drinkPic");
+      // animateCSS('image2', 'bounce');
       imgDiv.append(image2);
 
       // Ingredients 
