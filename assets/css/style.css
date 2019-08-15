@@ -78,3 +78,8 @@ height:350px;
 #cubaLabel, #negroniLabel, #bahamaLabel, #maiLabel, #ginLabel {
 font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
+
+.drinkPic{
+    width:350px;
+    height:450px;
+}
