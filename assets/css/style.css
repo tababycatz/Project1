@@ -22,7 +22,7 @@ body{
 
 }
 
-#movieGif, #movieInfo, #drinksImg, #drinksInfo{
+#movieGif, #movieInfo, #drinksImg{
     width:350px;
     height:450px;
     float: left;
@@ -84,8 +84,9 @@ font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 .drinkName{
     color:white;
-   
+    text-decoration: underline;
+    font-size:30px;
 }
-.instruction{
+#drinksInfo{
     width:500px;
 }
