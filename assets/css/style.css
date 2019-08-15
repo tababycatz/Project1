@@ -23,15 +23,15 @@ body{
 }
 
 #movieGif, #movieInfo, #drinksImg, #drinksInfo{
-    border:solid;
-    border-color:gray;
+    
     width:350px;
-    height:350px;
+    height:450px;
     float: left;
+    margin: 50px;
+    margin: 0 auto;
     
 }
 .parallax{
-    
     text-align: center; 
     margin-bottom: 300px;
     height: 450px;
