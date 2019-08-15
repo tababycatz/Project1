@@ -96,19 +96,13 @@ $(document).ready(function () {
 
     $("#drinksInfo").empty();
     $("#drinksImg").empty();
+  
+  }); 
+  
+  // Contact Form//
 
-
-    // Contact Form//
-
-    $("#submitBtn").on("click", function(){      
-      $("#contactForm").submit(); 
+  $("#submitBtn").on("click", function(){      
+    $("#contactForm").submit(); 
   });
 
-  $("#contactForm").empty()
-
-
-
-  }); //document.ready curly end// 
-
-
-});
+});//document.ready curly end// 
