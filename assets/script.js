@@ -36,6 +36,7 @@ $(document).ready(function () {
 
       var imgURL = response.Poster;
       var image = $("<img>").attr("src", imgURL);
+      image.addClass("moviePic");
       imgDiv.append(image);
 
 
@@ -48,16 +49,20 @@ $(document).ready(function () {
   });
 
   // Cocktail API //
+
   $("#searchBtn1").on("click", function (event) {
     event.preventDefault();
+    
     var drinks = $("#searchInput").val();
     var queryURL2 = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
     $.ajax({
       url: queryURL2,
       method: "GET"
     }).then(function (response) {
+
       var drinkDiv = $("#drinksInfo");
       var imgDiv = $("#drinksImg");
+
       // Drink Name //
       var drinkName = response.drinks[0]['strDrink'];
       var aZero = $("<p>").text(drinkName);
@@ -65,8 +70,10 @@ $(document).ready(function () {
 
       // Image
       var drinkthumb = response.drinks[0]['strDrinkThumb'];
-      var image = $("<img>").attr("src", drinkthumb);
+      var image2 = $("<img>").attr("src", drinkthumb);
+      image2.addClass("drinkPic");
       imgDiv.append(image);
+
       // Ingredients 
       var ingredients1 = response.drinks[0]['strIngredient1'];
       var aOne = $("<p>").text(ingredients1);
@@ -91,19 +98,14 @@ $(document).ready(function () {
 
     $("#drinksInfo").empty();
     $("#drinksImg").empty();
+  
+  }); 
 
+  // Contact Form//
 
-    // Contact Form//
+  $("#submitBtn").on("click", function(){      
+    $("#contactForm").submit(); 
+    alert("Thank you for your submission!");
+  });
 
-    $("#submitBtn").click(function () {
-      $("#contactForm").submit();
-      alert("Thanks for your submission!");
-
-    });
-
-
-
-  }); //document.ready curly end// 
-
-
-});
+});//document.ready curly end// 
