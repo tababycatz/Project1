@@ -35,9 +35,9 @@ $(document).ready(function () {
       movieDiv.append(tFour);
 
       var imgURL = response.Poster;
-      var image = $("<img>").attr("src", imgURL);
-      image.addClass("moviePic");
-      imgDiv.append(image);
+      var poster = $("<img>").attr("src", imgURL);
+      poster.addClass("moviePic");
+      imgDiv.append(poster);
 
 
     });
@@ -72,7 +72,7 @@ $(document).ready(function () {
       var drinkthumb = response.drinks[0]['strDrinkThumb'];
       var image2 = $("<img>").attr("src", drinkthumb);
       image2.addClass("drinkPic");
-      imgDiv.append(image);
+      imgDiv.append(image2);
 
       // Ingredients 
       var ingredients1 = response.drinks[0]['strIngredient1'];
@@ -89,7 +89,7 @@ $(document).ready(function () {
 
       var ingredients4 = response.drinks[0]['strIngredient4'];
       var aFour = $("<p>").text(ingredients4);
-      drinkDiv.append(afour);
+      drinkDiv.append(aFour);
 
       var instructions = response.drinks[0]['strInstructions'];
       var aFive = $("<p>").text(instructions);
