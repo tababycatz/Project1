@@ -36,6 +36,7 @@ $(document).ready(function () {
 
       var imgURL = response.Poster;
       var image = $("<img>").attr("src", imgURL);
+      image.addClass("moviePic");
       imgDiv.append(image);
 
 
@@ -69,9 +70,10 @@ $(document).ready(function () {
 
       // Image
       var drinkthumb = response.drinks[0]['strDrinkThumb'];
-      var image = $("<img>").attr("src", drinkthumb);
-      image.addClass("drinkPic");
+      var image2 = $("<img>").attr("src", drinkthumb);
+      image2.addClass("drinkPic");
       imgDiv.append(image);
+
       // Ingredients 
       var ingredients1 = response.drinks[0]['strIngredient1'];
       var aOne = $("<p>").text(ingredients1);
@@ -98,11 +100,12 @@ $(document).ready(function () {
     $("#drinksImg").empty();
   
   }); 
-  
+
   // Contact Form//
 
   $("#submitBtn").on("click", function(){      
     $("#contactForm").submit(); 
+    alert("Thank you for your submission!");
   });
 
 });//document.ready curly end// 
